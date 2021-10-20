@@ -1,7 +1,7 @@
 /** lab25functs.c
 * ================================================================
-* Name: CS210
-* Section: n/a
+* Name: Benjamin & Aris
+* Section: T1
 * Project: Lab25 - Dynamic Memory Allocation II
 * =================================================================
 */
