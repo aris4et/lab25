@@ -36,16 +36,16 @@ int main() {
      * using the malloc() function call.
      */
     
-    int* intarray;
+    int* intarray = NULL;
     intarray = (int*)malloc(sizeof(int)*INIT_SIZE); 
-    
+
     /** TASK 2 - declare and initialize an int variable to
      * hold the size of a data set of random integers.
      * The size should vary between 1 and 1000.  In other
      * words you are assigning the dataset size to be
      * a random number between 1 and 1000.
      */
-
+    int random_size = rand() % 1000 + 1;
 
     /** TASK 3 - complete the fillArray() function implementation
      * and call it.
