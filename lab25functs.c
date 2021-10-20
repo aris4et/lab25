@@ -5,7 +5,10 @@
 * Project: Lab25 - Dynamic Memory Allocation II
 * =================================================================
 */
-
+#include <time.h>
+#include <stdlib.h>
+#include <stdio.h>
+#include <math.h>
 #include "lab25functs.h"
 
 /** ----------------------------------------------------------
@@ -21,8 +24,17 @@
  * ----------------------------------------------------------
  */
 int fillArray(int *array, int arraySize, int dataSetSize) {
-    
-    return 0;
+    int count = 0;
+
+    while(arraySize < dataSetSize) {
+        arraySize*= 2;
+        array = (int*)realloc(array, arraySize * sizeof(int));
+        count++;
+    }
+    for(int i = 0; i < arraySize; ++i) {
+        array[i] = rand();
+    }
+    return count;
 }
 
 /** ----------------------------------------------------------
