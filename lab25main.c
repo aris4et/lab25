@@ -56,7 +56,8 @@ int main() {
      * randomly generated data set size (from task 2), and the number
      * of times doubled (returned by the function).
      */
-     
+     int int1 = fillArray(intarray, INIT_SIZE, random_size);
+     printf("%d", int1);
     /** TASK 3.5 - because of the design of this lab, and the use of realloc()
      *  in the function fillArray(), the array CAN NOT be freed in main
      *  Though this is bad practice, do not free(); in this lab
