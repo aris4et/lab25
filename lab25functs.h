@@ -10,4 +10,5 @@
 #define INIT_SIZE 100
 
 void seedGenerator();
+
 int fillArray(int *array, int arraySize, int dataSetSize);
