@@ -17,6 +17,7 @@
 #include <stdio.h>
 #include <time.h>
 #include <stdlib.h>
+#include "lab25functs.h"
 
 //local function prototypes
 
@@ -34,8 +35,10 @@ int main() {
     /** TASK 1 - Allocate an array of INIT_SIZE integers
      * using the malloc() function call.
      */
-
-
+    
+    int* intarray;
+    intarray = (int*)malloc(sizeof(int)*INIT_SIZE); 
+    
     /** TASK 2 - declare and initialize an int variable to
      * hold the size of a data set of random integers.
      * The size should vary between 1 and 1000.  In other
